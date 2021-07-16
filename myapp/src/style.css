@@ -1,9 +1,38 @@
-.icon {
+.icon{
+    display:visible;
     color:red;
-    font-size: 30px;
-
+    background-color:black;
+    font:30px;
+    z-index:100;
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(173, 39, 35);
 }
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:15px;
+}
+.box{
+    width:auto;
+    position:relative;
+    height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.play {
+    position:relative;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    z-index:100;
+    margin-left:200px;
+}
+.play:hover {
+    background-color:black;
+    color:white;
+}
+
